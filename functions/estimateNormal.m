@@ -1,18 +1,6 @@
 function normal = estimateNormal(data, tree, query, radius, min_neighbors)
-% ESTIMATENORMAL Given a point cloud and query point, estimate the surface 
-% normal by performing an eigendecomposition of the covariance matrix created 
-% from the nearest neighbors of the query point for a fixed radius.
-%
-%  Example: 
-%       data = randn(256,3);
-%       tree = KDTreeSearcher(data);
-%       query = [data(1,1) data(1,2) data(1,3)];
-%       radius = 1.0;
-%       min_neighbors = 8;
-%       normal = estimateNormal(data, tree, query, radius, min_neighbors)
-%
-%  Copyright (c) 2014, William J. Beksi <beksi@cs.umn.edu>
-% 
+% Surface normal estimation using eigen decomposition
+
 % Find neighbors within the fixed radius 
 idx = rangesearch(tree, query, radius);                                                   
 idxs = idx{1};
