@@ -4,8 +4,6 @@ function iso_vectors = computeIsoVectors(vertices, edges, iso_points, vector_fie
     % This is used when the iso -points are computed using Marching
     % tetrahedra algorithm (i.e., iso-points must be on edges of tet mesh)
     
-    % Note - compute_iso_vectors_2 is more generalised as it can be used
-    % with an input point cloud set.
 
     % vertices: matrix (n, 3) containing the vertex coordinates
     % edges: matrix (m, 2) where each row gives the indices of the vertices that form an edge
