@@ -1,4 +1,18 @@
- 
+% This code contains the RBF-weighted geodesic scalar field implementation
+% for the curved layer slicing method proposed by the following paper [1]
+% "Convexity and Surface Quality Enhanced Curved Slicing for Support-Free
+% Multi-Axis Fabrication" - Jayakody et al. (2023)
+
+% Notes: GA-based optimisation is not included. The user can adapt the
+% current scalar field with their preferred optimisation model 
+
+% Tool orientation planning can be implemented using the code related to
+% the following paper [2] "A salient vector field-driven part orientation
+% selection for multi-axis 3D printing" - Jayakody et al. (2025)
+
+% Dependencies - GPtoolbox and functions related to [2] paper.
+
+
 clear;close all;clc;
 addpath(genpath('Libraries'));  
  
